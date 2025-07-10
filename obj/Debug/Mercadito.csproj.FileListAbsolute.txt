@@ -1,0 +1,13 @@
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\bin\Debug\Mercadito.exe.config
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\bin\Debug\Mercadito.exe
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\bin\Debug\Mercadito.pdb
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.csproj.AssemblyReference.cache
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.Properties.Resources.resources
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.csproj.GenerateResource.cache
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.csproj.CoreCompileInputs.cache
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.exe
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.pdb
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.FrmMenu.resources
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.FrmLogin.resources
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.FrmProveedores.resources
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.FrmInventario.resources
