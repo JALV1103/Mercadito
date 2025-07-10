@@ -37,9 +37,10 @@
             // 
             this.btnInventario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnInventario.BackColor = System.Drawing.Color.Azure;
-            this.btnInventario.Location = new System.Drawing.Point(135, 423);
+            this.btnInventario.Location = new System.Drawing.Point(101, 344);
+            this.btnInventario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(116, 45);
+            this.btnInventario.Size = new System.Drawing.Size(87, 37);
             this.btnInventario.TabIndex = 0;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.UseVisualStyleBackColor = false;
@@ -49,9 +50,10 @@
             // 
             this.btnProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnProveedor.BackColor = System.Drawing.Color.Azure;
-            this.btnProveedor.Location = new System.Drawing.Point(480, 423);
+            this.btnProveedor.Location = new System.Drawing.Point(360, 344);
+            this.btnProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnProveedor.Name = "btnProveedor";
-            this.btnProveedor.Size = new System.Drawing.Size(116, 45);
+            this.btnProveedor.Size = new System.Drawing.Size(87, 37);
             this.btnProveedor.TabIndex = 1;
             this.btnProveedor.Text = "Proveedores";
             this.btnProveedor.UseVisualStyleBackColor = false;
@@ -60,22 +62,27 @@
             // 
             this.btnVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVentas.BackColor = System.Drawing.Color.Azure;
-            this.btnVentas.Location = new System.Drawing.Point(785, 423);
+            this.btnVentas.Location = new System.Drawing.Point(589, 344);
+            this.btnVentas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Size = new System.Drawing.Size(116, 45);
+            this.btnVentas.Size = new System.Drawing.Size(87, 37);
             this.btnVentas.TabIndex = 2;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.UseVisualStyleBackColor = false;
             // 
             // FrmMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1054, 741);
+            this.ClientSize = new System.Drawing.Size(790, 602);
             this.Controls.Add(this.btnVentas);
             this.Controls.Add(this.btnProveedor);
             this.Controls.Add(this.btnInventario);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(806, 641);
+            this.MinimumSize = new System.Drawing.Size(806, 641);
             this.Name = "FrmMenu";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "FrmMenu";
