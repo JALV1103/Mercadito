@@ -24,5 +24,10 @@ namespace Mercadito
         {
             this.Close();
         }
+
+        private void FrmInventario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
