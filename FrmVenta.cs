@@ -12,6 +12,8 @@ namespace Mercadito
 {
     public partial class FrmVenta : Form
     {
+        private List<Venta> venta; 
+
         public FrmVenta()
         {
             InitializeComponent();
@@ -19,6 +21,8 @@ namespace Mercadito
             Bitmap img = new Bitmap(Application.StartupPath + @"\IMG\FrmVenta.jpg");
             this.BackgroundImage = img;
             this.BackgroundImageLayout = ImageLayout.Stretch;
+
+            venta = new List<Venta>();
         }
 
         private void btnRegresarMenu_Click(object sender, EventArgs e)
@@ -28,11 +32,11 @@ namespace Mercadito
 
         private void btnExportar_Click(object sender, EventArgs e)
         {
-            ExportarAExcel excel = new ExportarAExcel();
-            if (saveDialog.ShowDialog() == DialogResult.OK)
+            ExportarExcel excel = new ExportarExcel();
+            if (saveDialog.ShowDialog() == DialogResult.OK) 
             {
-                string archivoAGuardar = saveDialog.FileName;
-                excel.ExportarListaAExcel(personas, archivoAGuardar);
+                string archivoAGuardar =saveDialog.FileName;
+                excel.ExportarListaAExcel(venta, archivoAGuardar);
                 MessageBox.Show("Archivo Guardado Exitosamente");
             }
         }

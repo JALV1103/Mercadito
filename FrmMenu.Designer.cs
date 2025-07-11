@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnInventario = new System.Windows.Forms.Button();
             this.btnProveedor = new System.Windows.Forms.Button();
             this.btnVentas = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblDia = new System.Windows.Forms.Label();
+            this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnInventario
@@ -84,12 +88,41 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Location = new System.Drawing.Point(16, 654);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(59, 20);
+            this.lblHora.TabIndex = 4;
+            this.lblHora.Text = "label1";
+            // 
+            // lblDia
+            // 
+            this.lblDia.AutoSize = true;
+            this.lblDia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblDia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDia.Location = new System.Drawing.Point(16, 693);
+            this.lblDia.Name = "lblDia";
+            this.lblDia.Size = new System.Drawing.Size(59, 20);
+            this.lblDia.TabIndex = 5;
+            this.lblDia.Text = "label2";
+            // 
+            // horaFecha
+            // 
+            this.horaFecha.Enabled = true;
+            this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick_1);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1051, 731);
+            this.Controls.Add(this.lblDia);
+            this.Controls.Add(this.lblHora);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnVentas);
             this.Controls.Add(this.btnProveedor);
@@ -102,6 +135,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "FrmMenu";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -111,6 +145,9 @@
         private System.Windows.Forms.Button btnProveedor;
         private System.Windows.Forms.Button btnVentas;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Label lblDia;
+        private System.Windows.Forms.Timer horaFecha;
     }
 }
 

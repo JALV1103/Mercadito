@@ -48,6 +48,14 @@ namespace Mercadito
             FrmVenta.ShowDialog();
             this.Show();
         }
-    }
 
+
+        private void horaFecha_Tick_1(object sender, EventArgs e)
+        {
+
+            lblHora.Text = DateTime.Now.ToString("hh:mm:ss");
+            lblDia.Text = DateTime.Now.ToShortDateString();
+        }
+    }
+        
 }

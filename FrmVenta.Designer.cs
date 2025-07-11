@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnRegresarMenu = new System.Windows.Forms.Button();
+            this.saveDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,6 +131,12 @@
             this.btnRegresarMenu.UseVisualStyleBackColor = true;
             this.btnRegresarMenu.Click += new System.EventHandler(this.btnRegresarMenu_Click);
             // 
+            // saveDialog
+            // 
+            this.saveDialog.DefaultExt = "xlsx";
+            this.saveDialog.FileName = "ReporteVenta";
+            this.saveDialog.Filter = "Archivo de Excel 2007+ |*.xlsx";
+            // 
             // FrmVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -144,6 +151,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnRegresarMenu);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1108, 713);
+            this.MinimumSize = new System.Drawing.Size(1108, 713);
             this.Name = "FrmVenta";
             this.Text = "FrmVenta";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -163,5 +173,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnRegresarMenu;
+        private System.Windows.Forms.SaveFileDialog saveDialog;
     }
 }

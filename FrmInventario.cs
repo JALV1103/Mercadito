@@ -12,12 +12,15 @@ namespace Mercadito
 {
     public partial class FrmInventario : Form
     {
+        private List<Inventario> inventario;
         public FrmInventario()
         {
             InitializeComponent();
             Bitmap img = new Bitmap(Application.StartupPath + @"\IMG\FrmInventario.jpg");
             this.BackgroundImage = img;
             this.BackgroundImageLayout = ImageLayout.Stretch;
+
+            inventario = new List<Inventario>();
         }
 
         private void btnRegresarMenu_Click(object sender, EventArgs e)
@@ -25,9 +28,16 @@ namespace Mercadito
             this.Close();
         }
 
-        private void FrmInventario_Load(object sender, EventArgs e)
-        {
 
+        private void btnExportar_Click(object sender, EventArgs e)
+        {
+            ExportarExcel excel = new ExportarExcel();
+            if (saveDialog.ShowDialog() == DialogResult.OK)
+            {
+                string archivoAGuardar = saveDialog.FileName;
+                excel.ExportarListaAExcel(inventario, archivoAGuardar);
+                MessageBox.Show("Archivo Guardado Exitosamente");
+            }
         }
     }
 }
