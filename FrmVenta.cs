@@ -15,6 +15,26 @@ namespace Mercadito
         public FrmVenta()
         {
             InitializeComponent();
+
+            Bitmap img = new Bitmap(Application.StartupPath + @"\IMG\FrmVenta.jpg");
+            this.BackgroundImage = img;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+        }
+
+        private void btnRegresarMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnExportar_Click(object sender, EventArgs e)
+        {
+            ExportarAExcel excel = new ExportarAExcel();
+            if (saveDialog.ShowDialog() == DialogResult.OK)
+            {
+                string archivoAGuardar = saveDialog.FileName;
+                excel.ExportarListaAExcel(personas, archivoAGuardar);
+                MessageBox.Show("Archivo Guardado Exitosamente");
+            }
         }
     }
 }

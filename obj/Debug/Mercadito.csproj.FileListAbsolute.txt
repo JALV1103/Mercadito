@@ -11,3 +11,4 @@ C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Soft
 C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.FrmLogin.resources
 C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.FrmProveedores.resources
 C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.FrmInventario.resources
+C:\Users\josea\OneDrive\Escritorio\UNICAH\Año 2025\II Periodo\Desarollo de Software\ProyectoMercadito\Mercadito\obj\Debug\Mercadito.FrmVenta.resources

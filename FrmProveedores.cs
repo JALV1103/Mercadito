@@ -15,6 +15,19 @@ namespace Mercadito
         public FrmProveedores()
         {
             InitializeComponent();
+            Bitmap img = new Bitmap(Application.StartupPath + @"\IMG\FrmProveedor.jpg");
+            this.BackgroundImage = img;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegresarMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

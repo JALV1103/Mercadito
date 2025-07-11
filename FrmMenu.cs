@@ -15,7 +15,7 @@ namespace Mercadito
         public FrmMenu()
         {
             InitializeComponent();
-            Bitmap img = new Bitmap(Application.StartupPath + @"\IMG\Menu.jpg");
+            Bitmap img = new Bitmap(Application.StartupPath + @"\IMG\FrmMenu.jpg");
             this.BackgroundImage = img;
             this.BackgroundImageLayout = ImageLayout.Stretch;
         }
@@ -27,5 +27,27 @@ namespace Mercadito
             FrmInventario.ShowDialog();
             this.Show();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnProveedor_Click(object sender, EventArgs e)
+        {
+            FrmProveedores FrmProveedores = new FrmProveedores();
+            this.Hide();
+            FrmProveedores.ShowDialog();
+            this.Show();
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            FrmVenta FrmVenta = new FrmVenta();
+            this.Hide();
+            FrmVenta.ShowDialog();
+            this.Show();
+        }
     }
+
 }
