@@ -40,5 +40,12 @@ namespace Mercadito
                 MessageBox.Show("Archivo Guardado Exitosamente");
             }
         }
+
+        private void FrmVenta_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'mercaditoDataSet1.Venta' Puede moverla o quitarla según sea necesario.
+            this.ventaTableAdapter.Fill(this.mercaditoDataSet1.Venta);
+
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnExportar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -38,7 +39,19 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnRegresarMenu = new System.Windows.Forms.Button();
             this.saveDialog = new System.Windows.Forms.SaveFileDialog();
+            this.mercaditoDataSet = new Mercadito.MercaditoDataSet();
+            this.mercaditoDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mercaditoDataSet1 = new Mercadito.MercaditoDataSet1();
+            this.ventaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ventaTableAdapter = new Mercadito.MercaditoDataSet1TableAdapters.VentaTableAdapter();
+            this.iDVentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mercaditoDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mercaditoDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mercaditoDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExportar
@@ -56,7 +69,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDVentaDataGridViewTextBoxColumn,
+            this.fechaDataGridViewTextBoxColumn,
+            this.totalDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.ventaBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(559, 92);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -137,6 +156,54 @@
             this.saveDialog.FileName = "ReporteVenta";
             this.saveDialog.Filter = "Archivo de Excel 2007+ |*.xlsx";
             // 
+            // mercaditoDataSet
+            // 
+            this.mercaditoDataSet.DataSetName = "MercaditoDataSet";
+            this.mercaditoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mercaditoDataSetBindingSource
+            // 
+            this.mercaditoDataSetBindingSource.DataSource = this.mercaditoDataSet;
+            this.mercaditoDataSetBindingSource.Position = 0;
+            // 
+            // mercaditoDataSet1
+            // 
+            this.mercaditoDataSet1.DataSetName = "MercaditoDataSet1";
+            this.mercaditoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ventaBindingSource
+            // 
+            this.ventaBindingSource.DataMember = "Venta";
+            this.ventaBindingSource.DataSource = this.mercaditoDataSet1;
+            // 
+            // ventaTableAdapter
+            // 
+            this.ventaTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDVentaDataGridViewTextBoxColumn
+            // 
+            this.iDVentaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.iDVentaDataGridViewTextBoxColumn.DataPropertyName = "ID_Venta";
+            this.iDVentaDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDVentaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDVentaDataGridViewTextBoxColumn.Name = "iDVentaDataGridViewTextBoxColumn";
+            // 
+            // fechaDataGridViewTextBoxColumn
+            // 
+            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha";
+            this.fechaDataGridViewTextBoxColumn.HeaderText = "Fecha";
+            this.fechaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
+            this.fechaDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // totalDataGridViewTextBoxColumn
+            // 
+            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
+            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
+            this.totalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            this.totalDataGridViewTextBoxColumn.Width = 125;
+            // 
             // FrmVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -156,7 +223,12 @@
             this.MinimumSize = new System.Drawing.Size(1108, 713);
             this.Name = "FrmVenta";
             this.Text = "FrmVenta";
+            this.Load += new System.EventHandler(this.FrmVenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mercaditoDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mercaditoDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mercaditoDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ventaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,5 +246,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnRegresarMenu;
         private System.Windows.Forms.SaveFileDialog saveDialog;
+        private System.Windows.Forms.BindingSource mercaditoDataSetBindingSource;
+        private MercaditoDataSet mercaditoDataSet;
+        private MercaditoDataSet1 mercaditoDataSet1;
+        private System.Windows.Forms.BindingSource ventaBindingSource;
+        private MercaditoDataSet1TableAdapters.VentaTableAdapter ventaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDVentaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
     }
 }

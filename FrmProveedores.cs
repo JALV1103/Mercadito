@@ -44,5 +44,14 @@ namespace Mercadito
                 MessageBox.Show("Archivo Guardado Exitosamente");
             }
         }
+
+        private void FrmProveedores_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'mercaditoDataSet2.Proveedor' Puede moverla o quitarla según sea necesario.
+            this.proveedorTableAdapter1.Fill(this.mercaditoDataSet2.Proveedor);
+            // TODO: esta línea de código carga datos en la tabla 'mercaditoDataSet1.Proveedor' Puede moverla o quitarla según sea necesario.
+            this.proveedorTableAdapter.Fill(this.mercaditoDataSet1.Proveedor);
+
+        }
     }
 }

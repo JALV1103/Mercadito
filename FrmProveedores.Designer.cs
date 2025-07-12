@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -38,7 +39,22 @@
             this.btnRegresarMenu = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.saveDialog = new System.Windows.Forms.SaveFileDialog();
+            this.mercaditoDataSet1 = new Mercadito.MercaditoDataSet1();
+            this.proveedorBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proveedorTableAdapter = new Mercadito.MercaditoDataSet1TableAdapters.ProveedorTableAdapter();
+            this.proveedorBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.mercaditoDataSet2 = new Mercadito.MercaditoDataSet2();
+            this.proveedorBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.proveedorTableAdapter1 = new Mercadito.MercaditoDataSet2TableAdapters.ProveedorTableAdapter();
+            this.idProveedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreProveedorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mercaditoDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mercaditoDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // button4
@@ -56,12 +72,18 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idProveedorDataGridViewTextBoxColumn,
+            this.nombreProveedorDataGridViewTextBoxColumn,
+            this.telefonoDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.proveedorBindingSource2;
             this.dataGridView1.Location = new System.Drawing.Point(562, 115);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(486, 545);
+            this.dataGridView1.Size = new System.Drawing.Size(524, 545);
             this.dataGridView1.TabIndex = 14;
             // 
             // textBox4
@@ -142,6 +164,63 @@
             this.saveDialog.FileName = "ReporteProveedores";
             this.saveDialog.Filter = "Archivo de Excel 2007+ |*.xlsx";
             // 
+            // mercaditoDataSet1
+            // 
+            this.mercaditoDataSet1.DataSetName = "MercaditoDataSet1";
+            this.mercaditoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // proveedorBindingSource
+            // 
+            this.proveedorBindingSource.DataMember = "Proveedor";
+            this.proveedorBindingSource.DataSource = this.mercaditoDataSet1;
+            // 
+            // proveedorTableAdapter
+            // 
+            this.proveedorTableAdapter.ClearBeforeFill = true;
+            // 
+            // proveedorBindingSource1
+            // 
+            this.proveedorBindingSource1.DataMember = "Proveedor";
+            this.proveedorBindingSource1.DataSource = this.mercaditoDataSet1;
+            // 
+            // mercaditoDataSet2
+            // 
+            this.mercaditoDataSet2.DataSetName = "MercaditoDataSet2";
+            this.mercaditoDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // proveedorBindingSource2
+            // 
+            this.proveedorBindingSource2.DataMember = "Proveedor";
+            this.proveedorBindingSource2.DataSource = this.mercaditoDataSet2;
+            // 
+            // proveedorTableAdapter1
+            // 
+            this.proveedorTableAdapter1.ClearBeforeFill = true;
+            // 
+            // idProveedorDataGridViewTextBoxColumn
+            // 
+            this.idProveedorDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.idProveedorDataGridViewTextBoxColumn.DataPropertyName = "IdProveedor";
+            this.idProveedorDataGridViewTextBoxColumn.HeaderText = "IdProveedor";
+            this.idProveedorDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idProveedorDataGridViewTextBoxColumn.Name = "idProveedorDataGridViewTextBoxColumn";
+            // 
+            // nombreProveedorDataGridViewTextBoxColumn
+            // 
+            this.nombreProveedorDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nombreProveedorDataGridViewTextBoxColumn.DataPropertyName = "NombreProveedor";
+            this.nombreProveedorDataGridViewTextBoxColumn.HeaderText = "NombreProveedor";
+            this.nombreProveedorDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nombreProveedorDataGridViewTextBoxColumn.Name = "nombreProveedorDataGridViewTextBoxColumn";
+            // 
+            // telefonoDataGridViewTextBoxColumn
+            // 
+            this.telefonoDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "telefono";
+            this.telefonoDataGridViewTextBoxColumn.HeaderText = "telefono";
+            this.telefonoDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
+            // 
             // FrmProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -161,7 +240,13 @@
             this.MinimumSize = new System.Drawing.Size(1116, 749);
             this.Name = "FrmProveedores";
             this.Text = "FrmProveedores";
+            this.Load += new System.EventHandler(this.FrmProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mercaditoDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mercaditoDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedorBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,5 +264,15 @@
         private System.Windows.Forms.Button btnRegresarMenu;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.SaveFileDialog saveDialog;
+        private MercaditoDataSet1 mercaditoDataSet1;
+        private System.Windows.Forms.BindingSource proveedorBindingSource;
+        private MercaditoDataSet1TableAdapters.ProveedorTableAdapter proveedorTableAdapter;
+        private System.Windows.Forms.BindingSource proveedorBindingSource1;
+        private MercaditoDataSet2 mercaditoDataSet2;
+        private System.Windows.Forms.BindingSource proveedorBindingSource2;
+        private MercaditoDataSet2TableAdapters.ProveedorTableAdapter proveedorTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idProveedorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreProveedorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
     }
 }

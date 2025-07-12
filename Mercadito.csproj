@@ -116,6 +116,21 @@
       <DependentUpon>FrmVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Inventario.cs" />
+    <Compile Include="MercaditoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MercaditoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MercaditoDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MercaditoDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MercaditoDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MercaditoDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proveedor.cs" />
@@ -144,6 +159,39 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="MercaditoDataSet.xsc">
+      <DependentUpon>MercaditoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MercaditoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MercaditoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MercaditoDataSet.xss">
+      <DependentUpon>MercaditoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MercaditoDataSet1.xsc">
+      <DependentUpon>MercaditoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MercaditoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MercaditoDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MercaditoDataSet1.xss">
+      <DependentUpon>MercaditoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MercaditoDataSet2.xsc">
+      <DependentUpon>MercaditoDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MercaditoDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MercaditoDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MercaditoDataSet2.xss">
+      <DependentUpon>MercaditoDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
